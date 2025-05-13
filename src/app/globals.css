@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+:root {
+    --neutral: #363020;
+    --primary: #605C4E;
+    --secondary: #A49966
+}
+
+.body {
+    background-color: var(--neutral);
+    max-width: 100%;
+    min-height: 100vh;
+    min-height: 100svh;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white
+}
+
+strong {
+    @apply text-3xl
+}
+
+.main{
+    background-color: var(--primary);
+}
+
+.btn {
+    @apply bg-[var(--secondary)] w-[3rem] h-[3rem] rounded-[50%] text-2xl
+}
