@@ -1,6 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+import React from "react";
 
 type Props = {
     href: string;
@@ -12,7 +13,7 @@ export default function NavIconButton(props: Props) {
 
     const router = useRouter()
 
-    const handleClick = (e: any) => {
+    const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault()
         router.push(props.href)
     }
