@@ -8,14 +8,14 @@ import { useRouter } from "next/navigation";
 
 export default function Home() {
 
-
+/*
     const router = useRouter()
 
 useEffect(() => {
   const interval = startPing(router);
 
   return () => stopPing(interval)
-}, [router])
+}, [router]) */
 
 return (
   <main className="w-[80%] h-[30rem] main flex flex-col items-center justify-center gap-20 rounded-lg p-6">
